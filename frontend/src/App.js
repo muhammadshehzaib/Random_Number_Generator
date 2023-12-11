@@ -12,7 +12,7 @@ function App() {
   const fetchRandomNumber = async () => {
     try {
       const response = await fetch(
-        "https://random-number-generator-xwq9.vercel.app/api/random",
+        "https://random-number-generator-63fh.vercel.app/api/random",
         {
           method: "GET",
           headers: {
