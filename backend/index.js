@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: false }));
 
-app.post("/api/random", async (req, res) => {
+app.get("/api/random", async (req, res) => {
   try {
     // let number = Math.floor(Math.random() * 10000);
 
