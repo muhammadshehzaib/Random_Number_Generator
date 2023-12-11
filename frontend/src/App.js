@@ -11,12 +11,15 @@ function App() {
 
   const fetchRandomNumber = async () => {
     try {
-      const response = await fetch("http://localhost:4001/api/random", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        "https://random-number-generator-xwq9.vercel.app/api/random",
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       if (response.ok) {
         const data = await response.json();
